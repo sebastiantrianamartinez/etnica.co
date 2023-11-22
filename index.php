@@ -28,7 +28,7 @@
 
 <video id="my-video" class="video-js" controls preload="auto" width="640" height="360"
        data-setup='{}'>
-    <source src="https://unoatv.com/nginx/stream/livestream/livestream.m3u8" type="application/x-mpegURL">
+    <source src="https://unoatv.com/nginx/streaming/livestream/livestream.m3u8" type="application/x-mpegURL">
 </video>
 
 <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
