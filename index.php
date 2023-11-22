@@ -17,6 +17,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            height: 100vh;
         }
         #my-video {
             width: 100%;
@@ -26,6 +27,8 @@
         .player{
             margin: auto;
             align-self: center;
+            width: 100%;
+            max-width: 800px;
         }
     </style>
 </head>
