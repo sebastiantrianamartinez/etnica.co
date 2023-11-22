@@ -32,6 +32,7 @@
             width: 100%;
             max-width: 800px;
             background-color: #fff;
+            height: calc(100vw * 9 / 16);
             max-height: 450px;
         }
     </style>
