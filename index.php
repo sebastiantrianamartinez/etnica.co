@@ -21,6 +21,8 @@
         }
         #my-video {
             width: 100%;
+            height: 100%;
+            max-height: 450px;
             max-width: 800px;
             margin: auto;
         }
@@ -29,6 +31,8 @@
             align-self: center;
             width: 100%;
             max-width: 800px;
+            background-color: #fff;
+            max-height: 450px;
         }
     </style>
 </head>
