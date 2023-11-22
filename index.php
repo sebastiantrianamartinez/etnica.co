@@ -16,22 +16,27 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            display: flex;
         }
         #my-video {
             width: 100%;
             max-width: 800px;
             margin: auto;
         }
+        .player{
+            margin: auto;
+            align-self: center;
+        }
     </style>
 </head>
 <body>
-
-<video id="my-video" class="video-js" controls preload="auto" width="640" height="360"
-       data-setup='{}'>
-    <source src="https://unoatv.com/nginx/streaming/livestream/livestream.m3u8" type="application/x-mpegURL">
-</video>
-
-<script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+    <div class="player">
+        <video id="my-video" class="video-js" controls preload="auto" width="640" height="360"
+            data-setup='{}'>
+            <source src="https://unoatv.com/nginx/streaming/livestream/livestream.m3u8" type="application/x-mpegURL">
+        </video>
+    </div>
+    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
 
 </body>
 </html>
