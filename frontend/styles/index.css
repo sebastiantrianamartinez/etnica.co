@@ -65,3 +65,10 @@ main{
         background: linear-gradient(90deg, rgba(193,79,44,1) 0%, rgba(118,18,93,1) 100%);
     }
 }
+
+.vjs-custom-play-button.vjs-icon-play:before {
+    content: url('../../assets/media/images/play.png');
+    width: 20px; 
+    height: 20px; 
+    display: inline-block;
+}
