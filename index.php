@@ -9,9 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="frontend/styles/index.css">
+    <link rel="shortcut icon" href="assets/media/images/favicon.png" type="image/x-icon">
+    <title>Canal 102 | Emcali Televisión</title>
+    <meta name="description" content="Señal en vivo del Canal 102 Emcali Televisión">
 </head>
 <body>
     <header>
+        <h1 id="page-title">Canal 102</h1>
         <div>
             <img src="assets/media/images/logo.png" alt="">
         </div>
