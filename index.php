@@ -12,6 +12,14 @@
     <link rel="shortcut icon" href="assets/media/images/favicon.png" type="image/x-icon">
     <title>Canal 102 | Emcali Televisión</title>
     <meta name="description" content="Señal en vivo del Canal 102 Emcali Televisión">
+    
+    <meta property="og:title" content="Canal 102 - Señal en Vivo por Emcali Televisión">
+    <meta property="og:description" content="Disfruta de la señal en vivo del Canal 102, producido por Emcali Televisión.">
+    <meta property="og:image" content="https://canal102.tv/assets/media/images/preview.jpg">
+    <meta property="og:url" content="https://canal102.tv">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Canal 102">
+
 </head>
 <body>
     <header>
