@@ -22,7 +22,7 @@ body {
     font-family: 'Arial', sans-serif;
     /*background: rgb(193,79,44);
     background: linear-gradient(90deg, rgba(193,79,44,1) 0%, rgba(118,18,93,1) 100%);*/
-    background-image: url('../../assets/media/images/background.png');
+    background-image: url('../../assets/media/images/background.webp');
     background-size: cover;
     color: #fff;
     margin: 0;
