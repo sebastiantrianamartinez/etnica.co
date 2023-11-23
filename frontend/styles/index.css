@@ -44,7 +44,7 @@ main{
     align-self: center;
     width: 100%;
     max-width: 800px;
-    background-color: #fff;
+    background-color: #ffffff;
     height: calc(100vw * 9 / 16);
     max-height: 450px;
 }
