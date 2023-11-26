@@ -7,7 +7,9 @@
     use React\EventLoop\Factory;
     use React\Socket\SecureServer;
     use React\Socket\Server;
-
+    use Ratchet\MessageComponentInterface;
+    use Ratchet\ConnectionInterface;
+   
     class WebSocketController implements MessageComponentInterface {
         protected $clients;
 
