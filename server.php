@@ -84,6 +84,6 @@
         ),
         $webSock
     );
-    
+    echo "Servidor WebSocket iniciado en el puerto 23656\n";
     $loop->run();
     
