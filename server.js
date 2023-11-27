@@ -10,7 +10,12 @@ const options = {
 
 const app = express();
 const server = https.createServer(options, app);
-const io = socketIO(server);
+const io = require('socket.io')(server, {
+    cors: {
+      origin: "https://canal102.tv",
+      methods: ["GET", "POST"]
+    }
+  });
 
 io.on('connection', (socket) => {
   console.log('Usuario conectado');
