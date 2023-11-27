@@ -6,7 +6,7 @@ var ispaleta = document.getElementById('starter-paleta');
 var islote = document.getElementById('starter-lote');
 
 
-const socket = io('wss://tu-dominio-o-ip:23656');
+const socket = io('wss://canal102.tv:23656');
 
         
 socket.on('connect', () => {
