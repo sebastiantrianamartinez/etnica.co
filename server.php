@@ -68,7 +68,7 @@
     
     $loop = Factory::create();
     $webSock = new SecureServer(
-        new Server('canal102.tv:23656', $loop),
+        new Server('0.0.0.0:23656', $loop),
         $loop,
         [
             'local_cert' => '/etc/letsencrypt/live/canal102.tv/fullchain.pem',
@@ -84,9 +84,9 @@
         ),
         $webSock
     );
-    echo "Servidor WebSocket iniciado en el puerto 23656\n";
     try{
         $loop->run();
+        echo "Servidor WebSocket iniciado en el puerto 23656\n";
     }
     catch(Exception $e){
         echo 'error: ' .$e;
