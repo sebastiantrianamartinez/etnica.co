@@ -4,12 +4,23 @@ var ilote = document.getElementById('lote');
 var ispuja = document.getElementById('starter-puja');
 var ispaleta = document.getElementById('starter-paleta');
 var islote = document.getElementById('starter-lote');
-const socket = new WebSocket('wss://canal102.tv:23656');  // Ajusta la URL del servidor WebSocket
+
+
+const socket = io('wss://tu-dominio-o-ip:23656');
 
         
-socket.addEventListener('open', (event) => {
-    console.log('Conexión abierta:', event);
-});
+socket.on('connect', () => {
+    console.log('Conectado al servidor WebSocket');
+  });
+
+  socket.on('disconnect', () => {
+    console.log('Desconectado del servidor WebSocket');
+  });
+
+  socket.on('message', (data) => {
+    console.log('Mensaje recibido:', data);
+    // Aquí puedes manejar el mensaje recibido del servidor
+  });
 
 
 function sendUpdate(){
