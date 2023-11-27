@@ -68,7 +68,7 @@
     
     $loop = Factory::create();
     $webSock = new SecureServer(
-        new Server('0.0.0.0:23656', $loop),
+        new Server('canal102.tv:23656', $loop),
         $loop,
         [
             'local_cert' => '/etc/letsencrypt/live/canal102.tv/fullchain.pem',
@@ -90,6 +90,7 @@
     }
     catch(Exception $e){
         echo 'error: ' .$e;
+        exit();
     }
    
     
