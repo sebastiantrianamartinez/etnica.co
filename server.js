@@ -1,9 +1,15 @@
-const http = require('http');
+const http = require('https');
+const fs = require('fs');
 const express = require('express');
 const socketIO = require('socket.io');
 
+const options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/canal102.tv/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/canal102.tv/fullchain.pem'),
+  };
+
 const app = express();
-const server = http.createServer(app);
+const server = https.createServer(options, app);
 const io = socketIO(server);
 
 io.on('connection', (socket) => {
