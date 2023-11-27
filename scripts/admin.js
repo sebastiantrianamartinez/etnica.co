@@ -5,6 +5,13 @@ var ispuja = document.getElementById('starter-puja');
 var ispaleta = document.getElementById('starter-paleta');
 var islote = document.getElementById('starter-lote');
 
+const io = require('socket.io')(server, {
+    cors: {
+      origin: "https://canal102.tv",
+      methods: ["GET", "POST"]
+    }
+  });
+  
 
 const socket = io('wss://canal102.tv:23656');
 
