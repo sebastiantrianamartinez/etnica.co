@@ -21,12 +21,13 @@ io.on('connection', (socket) => {
   console.log('Usuario conectado');
 
 socket.on('messageFromClient', (message) => {
+  io.emit('globalMessage', message);
   console.log(`Message received from the client: ${message}`);
-  // Check if the message type is "messageGlobal"
+  /*// Check if the message type is "messageGlobal"
   if (message.type === 'messageGlobal') {
   // Broadcast the message to all clients
     io.emit('globalMessage', message);
-  }
+  }*/
 });
    
 
