@@ -1,3 +1,23 @@
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "Carrera32$";
+    $dbname = "canal102.tv";
+
+    try {
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch(PDOException $e) {
+        echo json_encode("Error de conexión: " . $e->getMessage());
+        die();
+    }
+
+    $$query = 'SELECT * FROM feed WHERE feed_id = 1';
+    $request = $conn->prepare($query);
+    $request->execute();
+    $request = $request->fetch();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +39,14 @@
             <div class="info">
                 <h2>¡Recuerda!</h2>
                 <div class="info-item">
-                    <p>Mi última alimentación fue:<p><b>26 Noviembre 2023 7:00 p.m. </b> 
+                    <p>Mi última alimentación fue:<p><b><?php
+                    echo date('d M Y h:i A', $request["last_feed"]);
+                    ?></b> 
                 </div>
                 <div class="info-item">
-                    <p>El último llenado fue:<p><b>26 Noviembre 2023 7:00 p.m. </b> 
+                    <p>El último llenado fue:<p><b><?php
+                    echo date('d M Y h:i A', $request["last_full"]);
+                    ?></b> 
                 </div>
             </div>
         </div>
