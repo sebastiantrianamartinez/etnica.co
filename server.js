@@ -20,7 +20,17 @@ const io = require('socket.io')(server, {
 io.on('connection', (socket) => {
   console.log('Usuario conectado');
 
-  // Aquí puedes manejar eventos cuando un usuario se conecta
+socket.on('messageFromClient', (message) => {
+  console.log(`Message received from the client: ${message}`);
+  // Check if the message type is "messageGlobal"
+  if (message.type === 'messageGlobal') {
+  // Broadcast the message to all clients
+    io.emit('globalMessage', message);
+  }
+});
+   
+
+io.emit('mensajeGlobal', '¡Hola a todos!');
 
   socket.on('disconnect', () => {
     console.log('Usuario desconectado');

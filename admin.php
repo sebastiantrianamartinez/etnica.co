@@ -3,77 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Administración</title>
     <link rel="stylesheet" href="styles/admin.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <link rel="shortcut icon" href="assets/media/images/cat.png" type="image/x-icon">
 </head>
 <body> 
-
-    <div class="admin-section">
-        <h2>Información Actual:</h2>
-        <div class="info-box">
-            <div class="info-item">
-                <p id="info-lote"></p>
-                <div><b>Lote actual</b></div>
-            </div>
-
-            <div class="info-item">
-                <p id="info-paleta"></p>
-                <div><b>Paleta actual</b></div>
-            </div>
-
-            <div class="info-item">
-                <p id="info-puja"></p>
-                <div><b>Puja actual (M)</b></div>
-            </div>
-
-            <div class="info-item">
-                <p id="info-starter-puja"></p>
-                <div><b>Puja inicial (M)</b></div>
+    <header>
+        <img src="assets/media/images/cat.png" alt=""  class="logo" srcset="">
+        <h1>Control alimentación</h1>
+    </header>
+   <main>
+        <div class="info-panel">
+            <img src="assets/media/images/cat_2.png" alt="">
+            <div class="info">
+                <h2>¡Recuerda!</h2>
+                <div class="info-item">
+                    <p>Mi última alimentación fue:<p><b>26 Noviembre 2023 7:00 p.m. </b> 
+                </div>
+                <div class="info-item">
+                    <p>El último llenado fue:<p><b>26 Noviembre 2023 7:00 p.m. </b> 
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="admin-section">
-        <h2>Nueva puja:</h2>
-        <div class="bid-form-box">
-            <form class="bid-form" id="bid-form">
-                <div>
-                    <input type="text" placeholder="Paleta" name="paleta" id="paleta">
-                </div>
-                <div>
-                    <input type="text" placeholder="Puja" id="puja" name="puja" id="puja">
-                    <p>M</p>
-                </div>
-                <div class="app-button">
-                    <input type="button" value="Enviar" onclick="sendBid(event);">
-                </div>
-            </form>
+        <div class="control-panel">
+            <button class="feed" onclick="feed();">¡Aliméntame!</button>
+            <button class="feed" onclick="full();">Reportar nuevo llenado</button>
         </div>
-    </div>
-    
-   
-
-    <div class="admin-section">
-        <h2>Nuevo lote:</h2>
-        <div class="bid-form-box">
-            <form action="" class="bid-form" id="lot-form">
-                <div>
-                    <input type="text" placeholder="Lote" name="lot" id="starter-lote">
-                </div>
-                <div>
-                    <input type="text" placeholder="Paleta I." name="paleta" id="starter-paleta">
-                </div>
-                <div>
-                    <input type="number" placeholder="Puja I." name="puja" id="starter-puja">
-                    <p>M</p>
-                </div>
-                <div class="app-button" onclick="sendLot(event);">
-                    <input type="button" value="Enviar" onclick="sendLot(event);">
-                </div>
-            </form>
+   </main>
+   <footer>
+        <div class="footer-copyright">
+            <p>Todos los derechos reservados 2023 ©</p>
+            <p>Nicole Cuervo Pérez</p>
+            <p>Diana Paola Zapata Carvajal</p>
         </div>
-    </div>    
+        <div class="footer-project-reciber">
+            <img src="assets/media/images/utp.png" alt="">
+        </div>
+   </footer>
 </body>
 <script src="scripts/admin.js"></script>
 

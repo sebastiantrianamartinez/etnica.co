@@ -1,69 +1,81 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
 }
 body{
-    background-color: rgb(2, 14, 27);
-}
-.admin-section{
+    background-color: rgb(255, 232, 192);
+    height: 100vh;
     display: flex;
-    padding: 30px;
     flex-direction: column;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    margin: 20px;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 169, 225);
+    display: flex;
+    justify-content: center;
+}
+.logo, h1{
+    margin-right: 15px;
+    height: 80%;
+    width: auto;
+    align-self: center;
+    font-size: 2em;
 }
 
-.info-box{
+.info-panel{
+    margin: 5%;
+    width: 90%;
+    height: 150px;
     display: flex;
+    background-color: rgb(203, 146, 183);
+    border-radius: 5px;
 }
-.info-item{
+.info{
+    align-self: center;
     display: flex;
     flex-direction: column;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    margin-right: 5px;
 }
-.info-item > p{
-    align-self: center;
-    font-size: 35px;
+.info-item, h2{
+    margin-bottom: 10px;
+}
+
+.control-panel{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.feed{
+    margin: auto;
+    font-size: 22px;
     padding: 10px;
+    background-color: rgb(203, 146, 183);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 70%;
 }
-.info-item > div{
+
+footer{
+    background-color: rgb(203, 146, 183);
     margin-top: auto;
     margin-bottom: 0;
-    border-top: 1px solid #fff;
-    padding: 10px;
-}
-
-form{
+    padding: 20px;
     display: flex;
 }
-form > div{
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 8px;
+.footer-copyright{
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+.footer-project-reciber{
+    align-self: center;
     display: flex;
-    margin-right: 20px;
+    width: 20%;
 }
-form > div > input{
-    font-size: 40px;
-    border: none !important;
-    outline: none !important;
-    background-color: transparent;
-    overflow: none;
-    max-width: 240px;
-}
-form > div > p{
-    font-size: 40px;
-}
-#puja{
-    width: 140px;
-}
-
-.app-button:hover{
-    cursor: pointer;
-    background-color: #123;
+.footer-project-reciber > img{
+    width: 100%;
+    height: auto;
 }
