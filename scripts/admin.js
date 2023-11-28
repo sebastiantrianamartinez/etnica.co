@@ -1,4 +1,4 @@
-const socket = io('wss://canal102.tv:23656');
+/*const socket = io('wss://canal102.tv:23656');
 
         
 socket.on('connect', () => {
@@ -12,21 +12,31 @@ socket.on('connect', () => {
   socket.on('message', (data) => {
     console.log('Mensaje recibido:', data);
     // Aquí puedes manejar el mensaje recibido del servidor
-  });
+  });*/
 
 
   function full(){
-    var messageToSend = {
-        type: 'messageGlobal',
-        content: '9',
-    };
-    socket.emit('messageFromClient', messageToSend);
+    var formData = new FormData();
+    formData.append('full', true);
+    fetch('../data.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(response => {
+      alert("Reporte de llenado enviado exitosamente");
+    });
   }
 
   function feed(){
-    var messageToSend = {
-        type: 'messageGlobal',
-        content: '7',
-    };
-    socket.emit('messageFromClient', messageToSend);
+    var formData = new FormData();
+    formData.append('feed', true);
+    fetch('../data.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(response => {
+      alert("Señal para alimentar enviada exitosamente");
+    });
   }
