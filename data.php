@@ -54,7 +54,7 @@
                 "data" => NULL,
                 "signature" => "HTTP::RESPONSE::AT::" .time()
             ];
-            eader('Content-Type: application/json; charset=utf-8');
+            header('Content-Type: application/json; charset=utf-8');
             http_response_code(200);
             echo json_encode($response);
             die();
@@ -69,7 +69,7 @@
                 "data" => NULL,
                 "signature" => "HTTP::RESPONSE::AT::" .time()
             ];
-            eader('Content-Type: application/json; charset=utf-8');
+            header('Content-Type: application/json; charset=utf-8');
             http_response_code(200);
             echo json_encode($response);
             die();
