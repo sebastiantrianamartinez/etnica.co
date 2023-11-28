@@ -12,7 +12,7 @@
         die();
     }
 
-    $$query = 'SELECT * FROM feed WHERE feed_id = 1';
+    $query = 'SELECT * FROM feed WHERE feed_id = 1';
     $request = $conn->prepare($query);
     $request->execute();
     $request = $request->fetch();
