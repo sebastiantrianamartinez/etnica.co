@@ -15,5 +15,13 @@
         $query = 'SELECT * FROM feed WHERE feed_id = 1';
         $request = $conn->prepare($query);
         $request->execute();
-        echo json_encode($request->fetch());
+        $response = [
+            "status" => 200,
+            "message" => "success",
+            "data" => $request->fetch(),
+            "signature" => "HTTP::RESPONSE::AT::" .time()
+        ];
+        header('Content-Type: application/json; charset=utf-8');
+        http_response_code(200);
+        echo json_encode($response);
     }
