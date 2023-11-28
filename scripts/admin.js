@@ -25,6 +25,7 @@ socket.on('connect', () => {
     .then(response => response.json())
     .then(response => {
       alert("Reporte de llenado enviado exitosamente");
+      window.location.href = window.location.href;
     });
   }
 
@@ -38,5 +39,6 @@ socket.on('connect', () => {
     .then(response => response.json())
     .then(response => {
       alert("Señal para alimentar enviada exitosamente");
+      window.location.href = window.location.href;
     });
   }
