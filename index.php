@@ -30,7 +30,7 @@
     </header>
     <main>
         <div class="player">
-            <video id="my-video" class="video-js" controls preload="auto" width="640" height="360"
+            <video id="my-video" class="video-js" controls preload="auto" autoplay width="640" height="360"
                 data-setup='{}'>
                 <source src="https://unoatv.com/nginx/streaming/livestream/livestream.m3u8" type="application/x-mpegURL">
             </video>
