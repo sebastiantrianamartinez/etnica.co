@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="frontend/styles/index.css">
     <link rel="shortcut icon" href="assets/media/images/favicon.ico" type="image/x-icon">
     <title>Étnica TV | Étnica Televisión</title>
-    <meta name="description" content="Señal en vivo del Canal 102 Emcali Televisión">
+    <meta name="description" content="Señal en vivo del Canal de todos Étnica Televisión">
     
-    <meta property="og:title" content="Canal 102 - Señal en Vivo por Emcali Televisión">
-    <meta property="og:description" content="Disfruta de la señal en vivo del Canal 102, producido por Emcali Televisión.">
+    <meta property="og:title" content="Canal de todos - Señal en Vivo por Étnica Televisión">
+    <meta property="og:description" content="Disfruta de la señal en vivo del Canal de todos, producido por Étnica Televisión.">
     <meta property="og:image" content="https://canal102.tv/assets/media/images/preview.jpg">
     <meta property="og:url" content="https://canal102.tv">
     <meta name="og:type" content="website">
-    <meta name="og:site_name" content="Canal 102">
+    <meta name="og:site_name" content="Étnica Televisión">
 
 </head>
 <body>
@@ -32,7 +32,7 @@
         <div class="player">
             <video id="my-video" class="video-js" controls preload="auto" autoplay width="640" height="360"
                 data-setup='{}'>
-                <source src="https://unoatv.com/nginx/streaming/livestream/livestream.m3u8" type="application/x-mpegURL">
+                <source src="https://unoatv.com/nginx/streaming/unoavirtualprogram/unoavirtualprogram.m3u8" type="application/x-mpegURL">
             </video>
         </div>
     </main>
